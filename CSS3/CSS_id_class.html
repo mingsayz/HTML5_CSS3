@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      #header {
+        width : 500px;
+        background-color : #ffd800;
+        border : 1px solid #808080;
+        text-align : center;
+      }
+
+      #wrap {
+        width : 500px;
+        background-color : #66dbf6;
+        border : 2px solid #808080;
+        text-align: center;
+        overflow : hidden;
+      }
+
+      #content {
+        width : 350px;
+        border : 1px solid red;
+        float : left;
+      }
+
+      #side_banner {
+        border : 1px solid red;
+        float : left;
+      }
+
+      #footer {
+        clear : both;
+        width : 500px;
+        background-color : #ffd800;
+        border : 3px solid #808080;
+        text-align : center;
+      }
+      
+      .menu1 {
+        color : #1822e2;
+        font-weight: bold;
+      }
+
+      .menu1, .menu3, .menu5 {
+        font-size : 20px;
+      }
+    </style>
+
+    <!--div는 기본적으로 블록태그로, 밑으로 쭉 나열되지만 CSS속성에 float:left; 를 주면 옆으로 나열 됨
+    또한 이 경우에, 해당 div를 싸고 있는 #wrap 클래스에 overflow:hidden; 을 줘야함-->
+    <!--clear:both; 는 float:left;가 영향을 줄 수 있으므로 깨끗히 속성 삭제하기위함-->
+  </head>
+
+  <body>
+      <div id="header">
+          <h1>HEADER</h1>
+      </div>
+
+      <div id="wrap">
+        <div id="content">
+          <h1>CONTENT</h1>
+          <ul>
+            <li class="menu1">menu1</li>
+            <li class="menu2">menu2</li>
+            <li class="menu3">menu3</li>                    
+            <li class="menu4">menu4</li>
+            <li class="menu5">menu5</li>
+          </ul>
+        </div>
+        <div id="side_banner">
+          <h1>BANNER</h1>
+          <a href="http://www.google.com" target="_blank"><img src="http://www.test.com">
+        </div>
+      </div>
+      <div id="footer">
+        <h1>FOOTER</h1>
+      </div>
+  </body>
+</html>
+
+  
