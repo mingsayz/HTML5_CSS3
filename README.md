@@ -92,7 +92,33 @@ HTTP패킷 이라 부른다. HTTP패킷의 구조는 크게 헤더 와 바디로
 
 1. HTML 문서 안에 style 속성을 사용함
 ~~~.html
-
+<h1 style="color:blue;text-align:center;">CSS</h1>
 ~~~
 
-  
+2. style 태그를 사용함(internal)
+~~~.html
+<style type="text/css">
+    h1 {
+        color:blue;
+        text-align:center;
+    }
+</style>
+
+...
+
+<h1>CSS</h1>
+~~~
+
+
+3. css파일을 별도로 만들어, html문서에 연결시킴(External)
+- 확장자 .css로 저장 (ex. test.css)
+~~~.html
+    h1 {
+        color:blue;
+        text-align:center;
+    }
+~~~
+- 확장자 .htm으로 저장 (ex. main.htm)
+~~~.html
+<link rel="stylesheet" type="text/css" href="test.css">
+~~~
