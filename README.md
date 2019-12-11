@@ -122,3 +122,27 @@ HTTP패킷 이라 부른다. HTTP패킷의 구조는 크게 헤더 와 바디로
 ~~~.html
 <link rel="stylesheet" type="text/css" href="test.css">
 ~~~
+
+---
+### CSS 작성법
+~~~.css
+selector {property : value ;}
+선택자 {속성 : 속성값;}
+
+ex)
+h1 {
+        color:blue;
+        text-align:center;
+    }
+~~~
+
+* 선택자란 ? 특정 태그를 선택하여, 해당 태그의 속성을 변경 하는 목적으로 사용한다.
+* tag 선택자 -> 특정 태그를 선택하여 CSS 속성을 적용할 수 있다.
+* \* 선택자 -> 전체라는 의미의 \* 는 초기 세팅시 많이 사용된다. 
+* 전체와 특정태그의 혼합 : 전체적으로 속성을 설정한 다음 특정 태그의 속성을 변경한다.
+
+---
+### CSS id(#)와 class(.)
+: id값,class값을 주면 CSS 선택자로 사용가능.
+> id, class는 똑같은 기능을 하나, 선택자로 지정할때 id는 (#)으로, class는 (.)으로 표현
+
