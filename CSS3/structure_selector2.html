@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+
+    <style>
+        * {
+            margin:0;padding:0;
+        }
+        div {
+            width:500px;
+        }
+        ul li:nth-child(2n+1){
+            background-color:red;
+        }
+        ul li:nth-child(2n){
+            background-color:yellow;
+        }
+
+        ul li:first-child{
+            border-radius: 10px 10px 0 0;
+        }
+
+        ul li:last-child{
+            border-radius: 0 0 10px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+            <li>menu7</li>
+            <li>menu8</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <style>
+        ul>li {
+            font-size : 20px;
+            font-weight : bold;
+            color : orange;
+        }
+        li:hover {
+            color : blue;
+        }
+
+        div{
+            width : 300px;background-color:red;margin:0 auto;
+        }
+
+        ol li{
+            font-size:3em;
+            color:#ffffff;
+            font-weight: bold;
+        }
+
+        ol li:hover{
+            color:green;font-size:4em;
+        }
+    </style>
+    <!--margin은 동서남북으로 얼마나 띄울지 설정하는 것 (margin : 30px -> 동서남북 30px 다띄움) (margin : 30px(위) 0(오른쪽) 0(아래쪽) 30px(왼쪽))과같이 설정가능 -->
+    <!--margin:0 auto; -> 위쪽,아래쪽은 여백을 주지않고 좌,우의 여백을 동등하게 처리 (가운데 정렬이 됨) 중요함  -->
+    <!--hover는 마우스의 반응에 따른 속성을 설정할 수 있다. li:hover -> li 태그들에서 마우스를 갖다댄 태그들의 속성을 설정-->
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+
+    <div>
+        <ol>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ol>
+    </div>
+</body>
+</html>

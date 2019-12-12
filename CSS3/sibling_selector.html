@@ -3,8 +3,31 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        h3~div{
+            font-size:10px;
+            color:orange;
+        }
+        h3+div{
+            font-size: 20px;
+            font-weight: bold;
+            color :blue;
+        }
+        #title~div{
+            width:300px;
+            background:yellow;
+        }
+    </style>
+    <!--h3~div : h3와 동등한 위치에 있는 태그들 중 div를 모두 선택-->
+    <!--h3+div : h3와 동등한 위치에 있는 태그들 중 가장 근접한 div하나만 선택-->
+    <!--#title~div : title id와 동등한 위치에 있는 태그들 중 div 모두 선택-->
 </head>
 <!--동위 선택자(sibling selector)-->
 <body>
-
+    <h3 id="title">동위 선택자(+,~)</h3>
+    <div>div_01</div>
+    <div>div_02</div>
+    <div>div_3</div>
+    <div>div_4</div>
+    <div>div_5</div>
 </body>

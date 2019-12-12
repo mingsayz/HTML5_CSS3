@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        #content {
+            width:300px;
+        }
+
+        ul li{
+            list-style :none;
+            border:1px solid #cccccc;
+            padding:10px;
+            background-color:#efefef;
+            font-weight: bold;
+            font-size:20px;
+        }
+
+        ul li a{
+            color:#000000;
+        }
+
+        ul li:nth-child(2n+1){
+            background-color:#de9393;
+        }
+
+        ul li:first-child,ul li:last-child{
+            background-color: yellow;
+        }
+
+        ul li:first-child{
+            border-radius: 10px 10px 0 0;
+        }
+        ul li:last-child{
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+    <!--구조선택자 nth-child(2n+1)란 말은 1,3,5..홀수번째의 구조에 속성을 변경-->
+    <!--ul li:first-child, ul li:last-child 란말은 ul태그의 첫 번째 li태그, ul태그의 마지막 li태그를 나타냄-->
+    <!--ul li:first-of-type , ul li:last-of-type 으로 쓸 수도 있음-->
+    <!--border-radius: 10px(좌상단) 10px(우상단), 0(우하단) 0(좌하단) -->
+</head>
+
+<body>
+    <div id="content">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+            <li><a href="#">menu6</a></li>
+            <li><a href="#">menu7</a></li>
+            <li><a href="#">menu8</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
