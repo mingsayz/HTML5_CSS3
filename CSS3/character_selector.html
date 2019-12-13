@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+
+    <style>
+        #wrap {
+            margin : 0 auto;
+            width : 800px;
+        }
+        #header {
+            border-radius: 1px solid #cccccc;
+        }
+        #content p:first-child::selection{
+            background-color: blue;
+            color:yellow;
+        }
+        #history2::first-letter,#history1::first-letter{
+            font-size:2em;
+        }
+        #history2::first-line, #history1::first-line{
+            font-weight: bold;
+            color:#2160d1;
+        }
+        #footer ul{
+            overflow: hidden;
+            border: 2px solid #cccccc;
+        }
+        #footer ul li{
+            list-style : none;
+            float:left; padding:2px;
+        }
+    </style>
+    <!--몰라도 다른 방식으로 대처할수있지만, 알면 좋음-->
+    <!--first-letter은 해당 클래스 혹은 아이디의 첫 번째 문자선택, first-line은 첫 번째 줄 선택-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>설립개요</h1>
+        </div>
+        <div id="content">
+            <p>
+                중소기업 지원업무의 전문성과 효율성을 확보하고 중소기업에 대한 기술,경영 ,인력 등의 종합 지원체계를 구축한다.
+            </p>
+            <p id="history2">
+                2019년 12월 2일 <br /> 회사 사명 변경
+            </p>
+            <p id="history1">
+                2019년 12월 10일 <br /> 인큐베이팅 센터 오픈
+            </p>
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png"></li>
+                <li><img src="http://www.sba.seoul.kr/kr/images/footer/copyright.png"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

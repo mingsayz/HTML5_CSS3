@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+
+    <style>
+        #wrap {
+            width:800px;
+            margin:0 auto;
+        }
+        #header {
+            border-bottom: 1px solid #cccccc;    
+        }
+        #content a{
+            text-decoration: none;
+        }
+        #content a::after{
+            content : ' - ' attr(href);
+        }
+        #content li:not(.fa){
+            background-color :yellow;
+        }
+        #content ul{
+            overflow:hidden;
+        }
+        #footer ul{
+            list-style:none;
+            float: left; padding:20px;
+        }
+    </style>
+    <!--링크 선택자 : a태그-->
+    <!--#content a::after { content : '-' atter(href)} 는 content id 안에 a태그 컨텐츠 뒤에 '-'와 href링크를 추가한다-->
+    <!--#content li:not(.fa){}는 contenct id안의 li태그중 fa클래스가 아닌 것들만 선택-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>weekly connect website</h1>
+        </div>
+
+        <div id="content">
+            <ul>
+                <li><a href="http://www.google.com" target="_blank">구글</a></li>
+                <li class="fa"><a href="http://www.naver.com" target="_blank">네이버</a></li>
+                <li><a href="http://daum.net" target="_blank">다음</a></li>
+                <li class="fa"><a href="http://www.yahoo.com" target="_blank">야후</a></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png"></li>
+                <li><img src="http://www.sba.seoul.kr/kr/images/footer/copyright.png"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
