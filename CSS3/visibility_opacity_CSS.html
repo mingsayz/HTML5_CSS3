@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #display_none div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        #display_none div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:none;
+        }
+        #display_none div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        #visibility_hidden div:nth-child(1){
+            width:100px;
+            height:100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight: bold;
+            text-align:center;
+        }
+        #visibility_hidden div:nth-child(2){
+            width:100px;
+            height:100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight: bold;
+            text-align:center;
+            visibility: hidden;
+        }
+        #visibility_hidden div:nth-child(3){
+            width:100px;
+            height:100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight: bold;
+            text-align:center;
+        }
+
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        ul li{
+            display : inline-block;
+            width:200px;height:100px;
+            text-align: center;
+            background-color: #dddddd;
+        }
+        ul li:nth-child(2){
+            background-color: #dddddd;
+            opacity: 0.7;
+        }
+        ul li:nth-child(3){
+            background-color: #dddddd;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<!--visibility:hidden와 display:none의 차이점. display:none은 자리값까지 아예 사라져버리지만 
+visibility:hidden은 자리는 유지하고 숨기는것-->
+<!--원래 li는 밑으로 나열되야하지만 inline-block을 디스플레이 값으로 주면 옆으로 나열되는 동시에 높이값 조정가능-->
+<!--그래서 메뉴를 구성할 때 옆으로 나열하기 위해 display:inline-block을 사용한다-->
+
+<body>
+    <div id="display_none">
+        <div>
+            content1
+        </div>
+        <div>
+            content2
+        </div>
+        <div>
+            content3
+        </div>
+    </div>
+    <div id="visibility_hidden">
+        <div>
+            content1
+        </div>
+        <div>
+            content2
+        </div>
+        <div>
+            content3
+        </div>
+    </div>
+
+    <ul>
+        <li>우리나라 만세</li>
+        <li>대한민국 만세</li>
+        <li>Korea GOGO</li>
+    </ul>
+</body>
+</html>

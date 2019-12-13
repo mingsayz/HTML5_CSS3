@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        body div:nth-child(1){
+            width:100px;
+            height: 100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(2){
+            width:100px;
+            height: 100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(3){
+            width:100px;
+            height: 100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(4){
+            width:100px;
+            height: 100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(5){
+            width:100px;
+            height: 100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:inline;
+            margin: 10px;
+        }
+        body div:nth-child(6){
+            width:100px;
+            height: 100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:inline;
+        }
+        body div:nth-child(7){
+            width:100px;
+            height: 100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:none;
+        }
+        body div:nth-child(8){
+            width:100px;
+            height: 100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:inline;
+        }
+        body div:nth-child(9){
+            width:100px;
+            height: 100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<!--display속성은 화면에 어떻게 보이는지를 설정하는 속성. 다양한 속성값이 있지만 주로 몇 가지만 많이 사용됨-->
+<!--block 태그의 종류 : div,p,li 등 (밑으로 쭉 나열됨)-->
+<!--inline 태그의 종류 : span (별도의 br태그로 개행해주지 않으면 옆으로 쭉 나열됨)-->
+<!--또 다른 특징으로는 block은 높이의 속성을 가지고, inline은 높이 속성을 가지지 않음.-->
+<!--inline-block은 inline이지만 높이의 속성을 가짐-->
+<!--div nth-child(5)를 보면 높이를 100px로 줬음해도 높이 적용이 안됨 margin도 상하의 여백은 적용이 안됨-->
+<!--display:none;은 아예 안보임-->
+<body>
+    <div>
+        content1
+    </div>
+    <div>
+        content2
+    </div>
+    <div>
+        content3
+    </div>
+    <div>
+        content4
+    </div>
+    <div>
+        content5
+    </div>
+    <div>
+        content6
+    </div>
+    <div>
+        content7
+    </div>
+    <div>
+        content8
+    </div>
+    <div>
+        content9
+    </div>
+</body>
+</html>
