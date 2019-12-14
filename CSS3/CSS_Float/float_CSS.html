@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        #row1 {
+            width: 500px; margin:0 auto;
+            border:5px solid #dddddd;
+            overflow: hidden;
+        }
+        #row1 #first {
+            width: 100px;height: 100px;
+            float:left;
+            margin:5px;
+            padding:5px;
+            border:1px solid #cccccc;
+        }
+        #row1 #second {
+            width: 100px;height: 100px;
+            float:left;
+            margin:5px;
+            padding:5px;
+            border:1px solid #cccccc;
+        }
+        #row2 {
+            width: 500px; margin: 0 auto;
+            border: 5px solid #dddddd;
+            overflow:hidden;
+        }
+
+        #row2 #first {
+            width: 100px;height: 100px;
+            float:right;
+            margin:5px;
+            padding:5px;
+            border:1px solid #cccccc;
+        }
+        #row2 #second {
+            width: 100px;height: 100px;
+            float:right;
+            margin:5px;
+            padding:5px;
+            border:1px solid #cccccc;
+        }
+    </style>
+    <!--float:left 를 주면 감싸고 있는 상위 태그에 무조건 overflow: hidden을 줘야함-->
+    <!--float 속성을 주더라도 옆으로 붙일 공간이 없으면 밑으로 떨어짐-->
+</head>
+<body>
+    <div id="row1">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+
+    <div id="row2">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+</body>
+</html>
