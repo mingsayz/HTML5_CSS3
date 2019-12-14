@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #contain {
+            width: 800px;
+            margin: 0 auto;
+            border:1px solid #cccccc;
+        }
+
+        #header {
+            height: 50px;
+            background-color: #cccccc;
+            text-align: center;
+            line-height: 50px;
+        }
+        #wrap {
+            height: 200px;
+            position:relative;
+        }
+        #content1 {
+            width: 100px; height: 100px;
+            background-color: red;
+            border: 2px dashed green;
+            position: absolute;
+            top:10px; left:10px;
+            z-index: 20;
+        }
+        #content2 {
+            width: 100px; height: 100px;
+            background-color: yellow;
+            border: 2px dashed green;
+            position: absolute;
+            top:50px; left:50px;
+            z-index: 10;
+        }
+        #footer{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #cccccc;
+        }
+    </style>
+    <!--content1,content2를 absolute로 적용하면, 이것들을 싸고있는 wrap은 relative가 되어야함.-->
+    <!--만약 wrap이 relative가 아니라면, (0,0)부터 content1,2가 시작되버림-->
+    <!--항상 이렇게 쓰기 때문에 암기!!-->
+    <!--z-index는 깊이값을 조정하는것!-->
+</head>
+<body>
+    <div id="contain">
+        <div id="header">HEADER</div>
+        <div id="wrap">
+            <div id="content1">content1</div>
+            <div id="content2">content2</div>
+        </div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

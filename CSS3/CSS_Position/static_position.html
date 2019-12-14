@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div:nth-child(1){
+            width: 100px; height: 100px;
+            background-color: red;
+            position:static;
+            top:0px; left:0px;
+        }
+        div:nth-child(2){
+            width: 100px; height: 100px;
+            background-color: green;
+            position:static;
+            top:50px; left:22000px;
+        }
+        div:nth-child(3){
+            width: 100px; height: 100px;
+            background-color: blue;
+            position: absolute;;
+            top:100px; left:100px;
+        }
+    </style>
+    <!--position 속성중 static은 그냥 포지션을 디폴트로 바꿈(즉, 아무 속성 값을 주지않으면 디폴트로 스태틱임), 아무리 top,left값을 주어도 
+    아무 속성값이 없는것처럼 붙어서 출력됨.-->
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
