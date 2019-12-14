@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+            margin:0;
+            background:#dddddd;
+        }
+        div{
+            width:200px;
+            height:200px;
+            margin:10px;
+            padding:10px;
+            border:10px solid #ff8d00;
+        }
+        div:nth-child(1){
+            margin:0;
+            border:0;
+            padding:0;
+            background-color:#ff0000;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #00ff21;
+        }
+        div:nth-child(2){
+            background-color: #00ff00;
+            box-sizing: border-box;
+            border:15px dashed #c20b75;
+        }
+        div:nth-child(3){
+            box-sizing:content-box;
+            background-image: url("https://cdn.pixabay.com/photo/2019/11/29/14/18/gent-4661419_1280.jpg");
+            background-size:50%;
+        }
+    </style>
+    <!--box-sizing:border-box;를 주면 테두리가 안쪽에 생긴다.-->
+    <!--box-sizing:content-box;를 주면 테두리가 기본 사이즈에서 바깥쪽으로 생긴다 (그럼 기본 사이즈에서 더 커짐)-->
+    <!--아예 주지않으면 border 픽셀값 *2 만큼 크기가 커지는거임 (box-sizing:content-box)와 같음-->
+    <!--border:width style color 를 합쳐서 보통 표현, 따로 쓸수도있음-->
+</head>
+<body>
+    <div>200*200</div>
+    <div>200*200</div>
+    <div>200*200</div>
+</body>

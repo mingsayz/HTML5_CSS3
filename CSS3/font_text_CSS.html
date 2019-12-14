@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <style>
+        div{
+            width : 800px;
+            margin : 0 auto;
+            padding : 20px;
+            border: 2px solid #efefef;
+            box-sizing: border-box;
+        }
+        div:nth-child(1){
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div:nth-child(2){
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:nth-child(3){
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 2em;
+        }
+        div:nth-child(4){
+            font-size: 32px;
+            font-weight: 50px;
+            font-style: italic;
+            line-height: 50px;
+        }
+        
+
+        div:nth-child(5){
+            width: 300px;
+            height: 300px;
+            background-color: #efefef;
+            text-align: center;
+            line-height: 300px;
+        }
+
+    </style>
+    <!--기본적으로 폰트패밀리의 맨 처음 폰트가 사용되지만, PC에 따라 그 폰트가 사용자에게 없을 수 있기 때문에, 여러개를 지정해두는것-->
+    <!-- 만약 지정해둔 것이 아무것도 없다면, pc에서 기본적으로 제공하는 폰트로 출력됨-->
+    <!--line-height : 라인 행 간격 조정(보통 vertical 가운데 정렬 할때 많이 사용-->
+    <!--text-align은 가로축 가운데 정렬, 세로축 가운데 정렬을 하고싶을때는 line-height:(해당 크기 height) 만큼 주면됨-->
+
+</head>
+
+<body>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    </div>
+
+    <div>
+        세로 가운데 정렬 테스트
+    </div>
+</body>
+</html>
