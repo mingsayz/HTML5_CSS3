@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Layout02</title>
+    <style>
+        body{
+            background-color:aliceblue;
+        }
+        #wrap {width:900px;height:700px;text-align: center;font-size:30px;color:#fff;text-transform:uppercase; margin:0 auto;}
+        #header {width: 900px;height: 100px;background-color:#0277bd;line-height:100px;}
+        #nav {width: 900px;height: 100px;background-color:#0288d1;line-height:100px;}
+        #side_left {width: 300px;height: 400px;background-color:#039be5;float:left;line-height:400px;}
+        #content {width: 300px;height: 400px;background-color:#03a9f4;float:left;line-height:400px;}
+        #side_right {width: 300px;height: 400px;background-color:#29b6f6;float:left;line-height:400px;}
+        #footer {width: 900px;height: 100px;background-color:#0288d1;clear:both;line-height:100px;}
+    </style>
+<!--float:left 첫번째 방법: float:left;을 쓰면 해당 태그들의 height가 0으로 인식되는 오류는 밑에 추가되는 값들에 모두 float:left를 주는 방법-->
+<!--float:left 두번째 방법: 아래에 따라붙는 모든 구조에 float:left를 써주는데는 한계가 있으므로, float:left가 끝나고 밑으로 구조 추가할때 'clear:both;'를 사용-->
+</head>    
+<body>
+    <div id="wrap">
+        <div id="header">HEADER</div>
+        <div id="nav">NAVIGATION</div>
+        <div id="side_left">SIDE_LEFT</div>
+        <div id="content">CONTENTS</div>
+        <div id="side_right">SIDE_RIGHT</div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

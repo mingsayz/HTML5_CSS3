@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Layout01</title>
+    <style>
+        body {background: #c8e6c9;}
+        #wrap {width: 1000px;height:900px;margin:0 auto;font-size:40px;color:#fff;text-align:center;text-transform:uppercase;}
+        #header {width : 1000px; height: 100px;background:#2e7d32;line-height:100px;}
+        #nav {width: 1000px; height: 100px;background:#388e3c;line-height:100px;}
+        #side {float:left;width: 300px;height: 600px;background:#43a047;line-height:600px;}
+        #content {float:left;width: 700px;height: 600px;background:#4caf50;line-height:600px;}
+        #footer {float:left;width: 1000px;height: 100px;background:#66bb6a;line-height:100px;}
+    </style>
+    <!--시작 순서: 
+    1.body에 block 태그 div등을 사용하여 전체적인 구조를 짜고 style에 각 구조 아이디별로 width,height,background값을 준다.
+    2. 각 태그의 width,height 값을 다 더하여 wrap에 주고, margin:0 auto(가운데 정렬한다)-->
+    
+    <!--버그로 인해 float:left;를 주게되면 side와 content가 height값이 없는것으로 인식됨.-->
+    <!--그래서 시스템단에서는 footer가 nav밑으로 들어가있을것임 (오류)-->
+    <!--오류를 잡는 첫번째방법:사라진 구조(footer)에도 float:left;를 준다-->
+    
+
+    <!--text-transform:uppercase : 모두 대문자로 출력  -->
+
+    <!--display-flex를 써서 수직 가운데 정렬을 하지만, 초기단계라 정상적인 방법은 아니지만 line-height를 이용한다.-->
+    <!--line-height는 문장과 문장 사이의 간격을 의미하는데, 여기에 height값과 똑같이 넣어주게 되면 수직으로 가운데 정렬이 된다. (한줄일때만 가능)-->
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">HEADER</div>
+        <div id="nav">NAV</div>
+        <div id="side">SIDE MENU</div>
+        <div id="content">CONTENT</div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+
+</html>

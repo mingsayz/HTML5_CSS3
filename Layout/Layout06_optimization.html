@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utp-8"/>
+    <title>Layout06</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap {text-align:center;font-size:40px;color:#fff;}
+        #header {height: 140px;background-color:#ffe1e4;line-height:140px;}
+        #banner {height: 450px;background-color:#fbd6e3;line-height:450px;}
+        #contents {height: 950px;background-color:#ead5ee;line-height:950px;}
+        #footer {height: 220px;background-color:#d6ebfd;line-height:220px;}
+        
+        .container{width: 1100px;margin:0 auto;height: inherit;background: rgba(0,0,0,0.3);}
+    </style>
+<!--작업 순서:
+1. body 구조 코딩 (wrap둘러싸고 전체적인 header,banner,contents,footer 구조 잡음
+2. 내용물이 아닌 뼈대이므로 width:100%로 줌. (생략가능)
+3. 뼈대(header,banner,contents,footer)하위에 컨테이너 영역 생성
+4. 컨테이너 영역(header-container...)에 실질적인 width,height css코딩
+5. 컨테이너들의 margin,width값은 같음->묶을수 있음, height는 부모의 height를 그대로 따름 -> 상속가능, 백그라운드 색상만 지정해주면 됨-->
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">header</div>
+        </div>
+        <div id="banner">
+            <div class="container">banner</div>
+        </div>
+        <div id="contents">
+            <div class="container">contents</div>
+        </div>
+        <div id="footer">
+            <div class="container">footer</div>
+        </div>
+    </div>
+</body>
+</html>
