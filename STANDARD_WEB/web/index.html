@@ -8,9 +8,13 @@
     <meta name="generator" content="brackets">
     <title>WEBSTANDARD SITE</title>
     <!--link : http://kaosanct.dothome.co.kr/web/index.html -->
+    
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!--웹 폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
 <body>
    <!--스킵 네비게이션(웹 접근성) -->
@@ -31,15 +35,86 @@
                         <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
                     </div>
                     <!--//헤더 메뉴-->
-                    <div class="header-tit"></div>
-                    <div class="header-icon"></div>
+                    <div class="header-tit">
+                        <h1>Professional Publisher &amp; Designer</h1><br />
+                        <a href="https://github.com/kaosanct/HTML5_CSS3">Go to Dylan's Github</a>
+                    </div>
+                    <!--//헤더 타이틀-->
+                    
+                    <!--이미지를 표현하는 방법
+                        1. img태그로 표현(의미가 있을 때) / alt- 대체 문자 표현 (웹 접근성)
+                        2. background 속성으로 표현(의미가 없을 때) - 대체 문자를 쓸수없음.
+                        3. 이미지를 background 속성으로 사용하는 경우 / 가상으로 대체문자를 만들어줌(IR 기법)
+                            이미지 스프라이트 기법을 이용하면 편하고 이미지 용량이 반 정도로 줄어들기 때문에 요즘 사용하는 추세. (웹 표준을 준수하기 위해)
+                        -->
+                    <div class="header-icon">
+                        <a href="#" class="icon1"><span class="ir_pm">icon1</span></a>
+                        <a href="#" class="icon2"><span class="ir_pm">icon2</span></a>
+                        <a href="#" class="icon3"><span class="ir_pm">icon3</span></a>
+                        <a href="#" class="icon4"><span class="ir_pm">icon4</span></a>
+                    </div>
+                    <!--//헤더 아이콘-->
                 </div>
             </div>
         </div>
         <!--//header-->
         <div id="contents">
             <div id="cont_nav">
-                <div class="container">cont_nav</div>
+                <div class="container">
+                    <h2 class="ir_su">전체 메뉴</h2>
+                    <div class="nav">
+                        <div>
+                            <h3>HTML Reference</h3>
+                            <ol>
+                                <li><a href="#">HTML 태그(Tag)</a></li>
+                                <li><a href="#">블록 요소/인라인 요소</a></li>
+                                <li><a href="#">DTD 선언</a></li>
+                                <li><a href="#">언어 속성 설정</a></li>
+                                <li><a href="#">HTML &lt;title&gt;></a></li>
+                                <li><a href="#">HTML &lt;meta&gt;></a></li>
+                                <li><a href="#">특수문자</a></li>
+                                <li><a href="#">하이퍼 링크</a></li>
+                                <li><a href="#">HTML &lt;style&gt;</a></li>
+                                <li><a href="#">HTML &lt;html&gt;</a></li>
+                                <li><a href="#">HTML &lt;head&gt;</a></li>
+                                <li><a href="#">HTML &lt;div&gt;</a></li>
+                                <li><a href="#">HTML &lt;colgroup&gt;</a></li>
+                                <li><a href="#">HTML &lt;caption&gt;</a></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3>CSS Reference</h3>
+                            <ol>
+                                <li><a href="#">CSS 선택자</a></li>
+                                <li><a href="#">CSS 단위</a></li>
+                                <li><a href="#">CSS 색상</a></li>
+                                <li><a href="#">CSS 선언 방법</a></li>
+                                <li><a href="#">상대주소와 절대주소</a></li>
+                                <li><a href="#">CSS float</a></li>
+                                <li><a href="#">이미지 표현 방법</a></li>
+                                <li><a href="#">이미지 스프라이트</a></li>
+                                <li><a href="#">IR 효과</a></li>
+                                <li><a href="#">이미지 최적화</a></li>
+                                <li><a href="#">background-color</a></li>
+                                <li><a href="#">border-style</a></li>
+                                <li><a href="#">font-size</a></li>
+                                <li><a href="#">text-align</a></li>
+                            </ol>
+                        </div>
+                        <div class="last">
+                            <h3>Webstandard</h3>
+                            <ol>
+                                <li><a href="#">웹 표준</a></li>
+                                <li><a href="#">웹 접근성</a></li>
+                                <li><a href="#">W3C</a></li>
+                                <li><a href="#">웹 접근성 연구소</a></li>
+                                <li><a href="#">네이버 널리</a></li>
+                                <li><a href="#">다음 다룸</a></li>
+                                <li><a href="#">Webstandard</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--//cont_nav-->
             <div id="cont_tit">
