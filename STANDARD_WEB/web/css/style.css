@@ -185,8 +185,47 @@ background: url(../img/icon.png) -150px -90px; width: 17px;height: 17px;}
 .tab_menu ul li.active a {color: #fff;}
 .tab_menu ul li.active ul li a {color: #333;}
 
+/* 갤러리 */
+.gallery {position: relative; border:1px solid #ccc; height: 254px; overflow:hidden;}
+.gallery h4 {font-size: 14px; color : #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px;font-weight: bold;}
+.gallery .gallery_btn {position: absolute; right: 5px;top: 7px;}
+.gallery .gallery_btn ul {overflow: hidden;}
+.gallery .gallery_btn li {float:left; margin: 1px 2px;}
+.gallery .gallery_btn li a {display: block; width: 23px;height: 23px;background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn li.gb_icon1 a {background-position: -150px -120px;}
+.gallery .gallery_btn li.gb_icon2 a {background-position: -150px -143px;}
+.gallery .gallery_btn li.gb_icon3 a {background-position: -150px -166px;}
+.gallery .gallery_btn li.gb_icon4 a {background-position: -150px -189px;}
+.gallery .gallery_btn li.gb_icon1 a:hover {background-position: -173px -120px;}
+.gallery .gallery_btn li.gb_icon2 a:hover {background-position: -173px -143px;}
+.gallery .gallery_btn li.gb_icon3 a:hover {background-position: -173px -166px;}
+.gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px;}
+.gallery .gallery_img img{width: 100%;}
 
 
+/* 로그인 */
+#login_form {background: #f2f4f5; padding:15px;}
+.login_header {overflow: hidden; font-size: 12px;}
+.login_header .lh_check {float:left;padding-right: 15px;}
+.login_header .lh_check .input_check {vertical-align: -2px;}
+.login_header .lh_ip {float:left;}
+.login_header .lh_ip em {color: #0093bd; text-decoration: underline;}
+.login_content {position: relative;}
+.login_content .lc_btn {position:absolute; right: 0;top: 0;width: 62px;height: 47px;background: #fff; border: 1px solid #bebebe;}
+.login_content .input_text {width: 182px; height: 16px;padding: 2px 5px; border: 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+
+.login_footer {margin-top: 5px;}
+.login_footer li {display: inline;}
+.login_footer li a {font-size: 12px;}
+
+
+
+/* 팝업 */
+.popup h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+.popup ul {overflow:hidden;}
+.popup li {float:left; width: 93px; margin-right: 5px;}
+.popup li.last {margin-right: 0;}
+.popup li img {width: 100%;}
 
 
 
