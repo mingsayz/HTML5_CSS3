@@ -11,10 +11,10 @@
 #wrap {width: 100%;}
 #header {height: 325px;background:url(../img/header_bg.jpg) center top repeat-x;}
 #contents {}
-#footer {height: 200px;background:#333;}
+#footer {border-top: 1px solid #eee;}
 
 /* 컨텐츠 레이아웃 */
-#cont_nav {background-color:#f6fdff;}
+#cont_nav {background-color:#f6fdff; display:none;}
 #cont_tit {background-color:#EAF7FD;}
 #cont_ban {background-color:#dceff7;}
 #cont_cont {background:#f6fdff;}
@@ -68,23 +68,42 @@
 color:#2c94c4;font-family: 'Nanum Brush Script', cursive;}
 .tit .btn {position:absolute; top:5px; right:0; width: 60px; height: 60px;
 background: url(../img/icon.png) no-repeat 0 -600px;}
+.tit .btn.on {background-position: 0 -660px;}
 
 /* 배너 */
-.ban {position:relative; padding: 24px 0 20px;} /*position:absolute의 기준점이 됨*/
+
+/*
+.ban {position:relative; padding: 24px 0 20px;} /*position:absolute의 기준점이 됨
 .ban a.prev {position:absolute; left: -80px; top: 60px; width:43px; height: 43px;background :url(../img/icon.png) no-repeat -150px 0;} 
-/*위치를 자유롭게 이동시킬때 사용, position:relative가 기준이 됨. 그냥 이것만 주면 왼쪽 위로 가서 안보임 */
+/*위치를 자유롭게 이동시킬때 사용, position:relative가 기준이 됨. 그냥 이것만 주면 왼쪽 위로 가서 안보임 
 .ban a.next {position:absolute; right: -80px; top: 60px; width:43px; height: 43px;background: url(../img/icon.png) no-repeat -150px -43px;}
 .ban a.prev:hover {background-position: -193px 0;}
 .ban a.next:hover {background-position: -193px -43px;}
 .ban ul {overflow: hidden;}
 .ban ul li {float: left; width: 330px;}
-.ban ul li:last-child {text-align: right;} /* ie9부터 적용 */
-.ban ul li:nth-child(2) {text-align: center;}/* ie9부터 적용 */
+.ban ul li:last-child {text-align: right;} /* ie9부터 적용 
+.ban ul li:nth-child(2) {text-align: center;}/* ie9부터 적용 
 .ban ul li.ban_img1 {text-align: left;}
 .ban ul li.ban_img2 {text-align: center;}
-.ban ul li.ban_img3 {text-align: right;} /* 모든 버전에 호환되게 하려면 이렇게 작업 */
+.ban ul li.ban_img3 {text-align: right;} /* 모든 버전에 호환되게 하려면 이렇게 작업 
 .ban ul li img {border: 4px solid #dcdcdc;}
 .ban ul li img:hover {border-color:#98bcdc;}
+*/
+
+/* 슬릭 배너 */
+.ban {position:relative; padding: 24px 0 40px;}
+.ban .slick-prev {position:absolute; left: -80px; top: 80px; width:43px; height: 43px;background :url(../img/icon.png) no-repeat -150px 0; text-indent:-9999px;}
+.ban .slick-next {position:absolute; right: -80px; top: 80px; width:43px; height: 43px;background: url(../img/icon.png) no-repeat -150px -43px; text-indent:-9999px;}
+.ban .slick-prev:hover {background-position: -193px 0;}
+.ban .slick-next:hover {background-position: -193px -43px;}
+.ban img {border: 4px solid #dcdcdc;}
+.ban img:hover {border-color:#98bcdc;}
+.ban .slick-slide {margin: 10px;}
+.ban .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
+.ban .slick-dots li {display: inline-block; width: 15px; height: 15px;margin: 5px;}
+.ban .slick-dots li button {font-size: 0;line-height: 0;display: block; width: 15px;height: 15px;cursor: pointer; background: #5dbfeb; border-radius: 50%;}
+.ban .slick-dots li.slick-active button {background: #2b9118;}
+
 
 /* 컨텐츠 */
 .cont {overflow: hidden;padding-top: 30px;}
@@ -185,8 +204,18 @@ background: url(../img/icon.png) -150px -90px; width: 17px;height: 17px;}
 .tab_menu ul li.active a {color: #fff;}
 .tab_menu ul li.active ul li a {color: #333;}
 
+/* 게시판4 */
+.notice4 {position: relative; border: 1px solid #ccc;}
+.notice4 h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; font-weight: 700; padding: 8px 10px;}
+.notice4 h4 em {color: #cf3292;}
+.notice4 ul {padding: 10px;}
+.notice4 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0px 8px; padding-left: 8px; padding-bottom: 2px; }
+.notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice4 li span {float: right; width: 30%; text-align: right;}
+.notice4 a.more {position: absolute; right: 9px; top: 9px;}
+
 /* 갤러리 */
-.gallery {position: relative; border:1px solid #ccc; height: 254px; overflow:hidden;}
+.gallery {position: relative; border:1px solid #ccc; height: 255px; overflow: hidden;}
 .gallery h4 {font-size: 14px; color : #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px;font-weight: bold;}
 .gallery .gallery_btn {position: absolute; right: 5px;top: 7px;}
 .gallery .gallery_btn ul {overflow: hidden;}
@@ -202,9 +231,21 @@ background: url(../img/icon.png) -150px -90px; width: 17px;height: 17px;}
 .gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px;}
 .gallery .gallery_img img{width: 100%;}
 
+/* 슬릭 갤러리 */
+.gallery .gallery_btn button {float:left; margin: 1px 2px;display: block; width: 23px;height: 23px;background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn .gb_icon1 {background-position: -150px -120px;}
+.gallery .gallery_btn .gb_icon2 {background-position: -150px -143px;}
+.gallery .gallery_btn .gb_icon3 {background-position: -150px -166px;}
+.gallery .gallery_btn .gb_icon4 {background-position: -150px -189px;}
+.gallery .gallery_btn .gb_icon1:hover {background-position: -173px -120px;}
+.gallery .gallery_btn .gb_icon2:hover {background-position: -173px -143px;}
+.gallery .gallery_btn .gb_icon3:hover {background-position: -173px -166px;}
+.gallery .gallery_btn .gb_icon4:hover {background-position: -173px -189px;}
+
+
 
 /* 로그인 */
-#login_form {background: #f2f4f5; padding:15px;}
+#login_wrap {margin-bottom: 15px; background: #f2f4f5; padding:15px;}
 .login_header {overflow: hidden; font-size: 12px;}
 .login_header .lh_check {float:left;padding-right: 15px;}
 .login_header .lh_check .input_check {vertical-align: -2px;}
@@ -227,5 +268,17 @@ background: url(../img/icon.png) -150px -90px; width: 17px;height: 17px;}
 .popup li.last {margin-right: 0;}
 .popup li img {width: 100%;}
 
+/* 푸터 */
+.footer {padding: 25px 0; text-align: center;}
+.footer ul {margin-bottom: 20px;}
+.footer li {position:relative; display: inline; padding: 0 7px 0 10px;}
+.footer li:before {content:''; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 2px;}
+.footer li:first-child:before {width: 0px;height: 0px;}
+.footer .w3c {margin-top: 15px;}
 
+/* 레이어 팝업 */
+#layer {display: none; position: fixed;left: 50px;top: 50px;width: 700px;border: 10px solid #dceff7; box-shadow:3px 3px 10px rgba(0,0,0,0.4);}
+#layer img{width: 100%; display: block;}
+#layer .close {position: absolute; right: 20px; top: 20px;background: #0093bd; padding: 1px 6px; color:#fff;}
+#layer .close:hover {text-decoration: underline;}
 
