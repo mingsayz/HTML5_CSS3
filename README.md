@@ -159,3 +159,14 @@ h1 {
 > http://ui.daum.net (웹 접근성)
 > http://www.wah.or.kr (웹 접근성 지침서)
 > 네이버 널리
+
+
+---
+
+# 알아두면 유용한 사이트
+- css 초기화 사이트 : 
+  + Eric Meyer's Reset CSS : http://meyerweb.com/eric/tools/css/reset
+  + HTML5 Doctor Reset stylesheet : http://html5doctor.com/html-5-reset-stylesheet/
+- css 코드 정리 사이트 : https://codebeautify.org/css-beautify-minify
+- 그레디언트 제작 사이트 : http://www.colorzilla.com/gradient-editor/
+- 임시 이미지 호출 : http://placehold.it/500x500
