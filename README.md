@@ -170,3 +170,9 @@ h1 {
 - css 코드 정리 사이트 : https://codebeautify.org/css-beautify-minify
 - 그레디언트 제작 사이트 : http://www.colorzilla.com/gradient-editor/
 - 임시 이미지 호출 : http://placehold.it/500x500
+- 사용하고자 하는 기능이 해당 브라우저들에서 동작하지않을때 : https://html5please.com
+- CSS Sprites Generator : https://www.toptal.com/developers/css/sprite-generator/
+    + Padding between elements(px): 0
+    + Align elements: top
+    + Generate 버튼 클릭
+
