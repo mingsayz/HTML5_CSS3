@@ -176,3 +176,22 @@ h1 {
     + Align elements: top
     + Generate 버튼 클릭
 
+---
+
+# 자주 사용
+- 간단한 초기화:
+~~~.css
+* {margin:0; padding:0;}
+body {font-family: 'Helvetica', sans-serif;}
+li {list-style: none;}
+a {text-decoration: none;}
+~~~
+
+- 생략 클래스 (Ellipsis):
+~~~.css
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+~~~
