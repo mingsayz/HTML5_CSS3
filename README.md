@@ -175,6 +175,7 @@ h1 {
     + Padding between elements(px): 0
     + Align elements: top
     + Generate 버튼 클릭
+- 어도비 컬러 cc : http://color.adobe.com/
 
 ---
 
