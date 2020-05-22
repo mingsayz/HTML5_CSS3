@@ -176,6 +176,7 @@ h1 {
     + Align elements: top
     + Generate 버튼 클릭
 - 어도비 컬러 cc : http://color.adobe.com/
+- transition-timing-function (수치 변형 함수)생성 : http://cubic-bezier.com/
 
 ---
 
