@@ -1,0 +1,121 @@
+.container {
+  background: beige;
+  height: 100vh;
+
+  /* 첫번째 : 컨테이너에 display: flex를 준다. (박스가 div더라도 가로로 정렬됨) */
+  display: flex;
+
+  /* 기본값 : 가로로 정렬 */
+  flex-direction: row;
+
+  /* 가로축으로 정렬하지만 반대로 정렬됨 10~1 순서로 */
+  /* flex-direction: row-reverse; */
+
+  /* 세로축을 기준으로 정렬 */
+  /* flex-direction: column */
+
+  /* 세로축으로 정렬하지만 반대로 정렬됨 10~1 순서로 */
+  /* flex-direction: column-reverse */
+
+  /* 한줄에 아무리 박스가 많아져도 한줄에 정렬됨(nowrap) */
+  /* flex-wrap: nowrap; */
+
+  /* 한줄에 박스가 꽉차면 다음 라인으로 넘어감(wrap)*/
+  flex-wrap: wrap;
+
+  /* 한번에 flex-direction, flex-wrap 묶어서 작성법 */
+  /* flex-flow: column nowrap */
+
+  /* 아이템을 어떻게 배치할건지(왼쪽 정렬 혹은 오른쪽 정렬 혹은 가운데 정렬)를 결정함 */
+  /* 기본값: flex-start(왼쪽에서부터 정렬) */
+  /* justify-content: flex-start; */
+
+  /* 박스 오른쪽으로 정렬 */
+  /* justify-content: flex-end; */
+
+  /* 박스 가운데 정렬 */
+  /* justify-content: center; */
+
+  /* 박스 사이에 일정한 간격을 준다.(대신 처음과 끝 박스의 간격이 조금 다름, 박스가 마진을 가지는거라고 생각) */
+  /* justify-content: space-around; */
+
+  /* 처음과 끝 박스의 간격도 똑같이 부여 */
+  /* justify-content: space-evenly; */
+
+  /* 처음과 끝 박스는 부모에 붙이고, 남은 박스들에 간격을 주는것 */
+  justify-content: space-between; /* main axis*/
+
+  /* 수직으로 가운데 정렬을 하고싶을때 사용*/
+  /* align-items: center; */
+
+  /* 아이템에 padding 값이 있어서 텍스트 위치가 박스하나의 위치가 바뀌었을때 베이스라인에 맞출수있다. */
+  align-items: baseline;
+
+  /* justify와 반대되는 개념. 수직으로 간격을 줌 , justify에 사용되는 모든 값 동일하게 사용 가능*/
+  align-content: space-between;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+.item1 {
+  background: #ef5350;
+  /* 박스의 순서를 바꿀수 있다. */
+  /* order: 2 ; (두번째로 감) */
+}
+.item2 {
+  background: #ec407a;
+
+  /* 컨테이너가 커져도 박스는 원래 크기를 유지한다(디폴트) 만약 커졌을때 박스의 크기를 키우고싶으면 flew-grow 사용  */
+  /* flex-grow: 1;*/
+
+  /* 컨테이너가 작아질때 어떻게 작아져야하는지 flex-shrink 사용*/
+  /* flex-shrink: 1; */
+}
+.item3 {
+  background: #ab47bc;
+
+  /* 박스의 flex-grow를 전부 1로주면 스크린이 커졌을때 모든 박스 다같이 커짐*/
+  /* flex-grow: 1;*/
+
+  /* 컨테이너가 작아질때 2배로 빨리줄어듬*/
+  /* flex-shrink: 2; */
+}
+.item4 {
+  background: #5c6bc0;
+
+  /* 박스의 flew-grow를 2로 주면 컨테이너가 커질때 2배로 커짐.*/
+  /* flex-grow: 2; */
+}
+.item5 {
+  background: #29b6f6;
+
+  /* 컨테이너의 width의 몇프로를 항상 차지하게 만들수있는 것 (절대값으로 지정) */
+  /* flex-basis: 40% : 항상 40%차지 */
+}
+.item6 {
+  background: #26a69a;
+
+  /* 이 박스는 항상 컨테이너 width의 10프로를 차지 */
+  /* flex-basis: 10%; */
+}
+.item7 {
+  background: #9ccc65;
+
+  /* flex 값들은 border와 같이 한번에 쓸 수도 있다. */
+  /* flex: 2 2 auto;  grow, shrink, basis */
+}
+.item8 {
+  background: #ffee58;
+
+  /* 박스 위치를 따로 배정가능하다 (수직으로) */
+  /* align-self: center; */
+}
+.item9 {
+  background: #ff7043;
+}
+.item10 {
+  background: #bf360c;
+}
